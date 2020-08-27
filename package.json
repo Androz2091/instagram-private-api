@@ -1,7 +1,7 @@
 {
-  "name": "@androz2091/instagram-private-api",
+  "name": "instagram-private-api",
   "description": "Instagram private API wrapper for full access to instagram",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -21,11 +21,9 @@
   },
   "homepage": "https://github.com/dilame/instagram-private-api",
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "typecheck": "tsc -p tsconfig.build.json --noEmit",
-    "prepare": "npm run build",
     "test": "mocha --inline-diffs --timeout 1000000 tests/run.js",
     "generate-interface": "ts-node ./tools/response-to-interface.ts",
     "generate-docs": "ts-node ./tools/docs-generator.ts"
